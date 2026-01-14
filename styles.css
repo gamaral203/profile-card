@@ -4,7 +4,7 @@
 /* Reset do css*/
 *{
     margin: 0;
-    padding: 0%;
+    padding: 0;
     box-sizing: border-box;
     line-height: 1;
 }
@@ -31,7 +31,7 @@ body{
 background-color: white ;
 border-radius: 20px;
 overflow: hidden;
-box-shadow: 0 4px 6px rgb(0, 0, 0.1)
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /*estilização header*/
@@ -82,7 +82,11 @@ align-items: center;
     padding: 5px 25px;
     margin-top: 20px;
     border-radius: 30px;  
-    transition: 0.3s ease; 
+    transform: scale(1);
+    transition: all 300ms ease-in-out; 
+}
+.contact-button:hover{
+    transform: scale(1.2);
 }
 .profile-contact a{
     text-decoration: none;
@@ -99,7 +103,7 @@ align-items: center;
     
 }
 section h3{
-    margin-bottom: 10px 0px;
+    margin: 10px 0;
     font-weight: 400;
     font-size: 28px;
     color: #3470f1;
@@ -137,4 +141,3 @@ footer{
 .profile-social-link {
     display: inline-flex;
 }
-
