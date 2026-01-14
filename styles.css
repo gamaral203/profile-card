@@ -78,15 +78,13 @@ align-items: center;
     font-weight: 500;
 }
 .contact-button{
+    display: inline-block;
     background-color: #fffefe;
     padding: 5px 25px;
-    margin-top: 20px;
+    margin: 10px 10px 0;
     border-radius: 30px;  
     transform: scale(1);
     transition: all 300ms ease-in-out; 
-}
-.contact-button:hover{
-    transform: scale(1.2);
 }
 .profile-contact a{
     text-decoration: none;
@@ -94,6 +92,7 @@ align-items: center;
     font-weight: 600;
 }
 .contact-button:hover{
+    transform: scale(1.2);
     color: rgb(255, 247, 247);
     background-color: rgb(65, 46, 235);
 }
@@ -140,4 +139,10 @@ footer{
 
 .profile-social-link {
     display: inline-flex;
+    transform: scale(1);
+    transition: all 300ms ease-in-out;
+}
+
+.profile-social-link:hover {
+    transform: scale(1.2);
 }
